@@ -9,7 +9,7 @@ namespace LegacyApp
     {
         public static void AddUser(User user)
         {
-            var connectionString = ConfigurationManager.ConnectionStrings["appDatabase"].ConnectionString;
+            var connectionString = "Server=localhost;Database=legacydb;User Id=sa;Password=123456;";
 
             using (var connection = new SqlConnection(connectionString))
             {
